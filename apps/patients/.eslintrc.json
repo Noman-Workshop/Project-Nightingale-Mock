@@ -24,12 +24,14 @@
 	],
 	"rules": {
 		"@typescript-eslint/quotes": [
-			"error",
+			2,
 			"single",
 			{
 				"allowTemplateLiterals": true
 			}
 		],
+		"comma-dangle": 0,
+		"@typescript-eslint/comma-dangle": 0,
 		"react/function-component-definition": [
 			2,
 			{
