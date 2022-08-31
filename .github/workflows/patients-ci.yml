@@ -12,7 +12,7 @@ jobs:
     uses: nrwl/ci/.github/workflows/nx-cloud-main.yml@v0.6
     with:
       number-of-agents: 3
-      parallel-commands:
+      parallel-commands: |
         npx nx-cloud record -- npx nx lint
         npx nx-cloud record -- npx nx test
         npx nx-cloud record -- npx nx build
